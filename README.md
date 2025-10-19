@@ -55,6 +55,8 @@ Replace `<server-file-name>` or `<client-file-name>` with the appropriate Python
 
 ### MCP Architecture Diagrams
 
+For introductory understanding read `model-context-protocol.pdf`.
+
 Below are diagrams illustrating the Model Context Protocol architecture ([DeepLearning.AI](https://learn.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic/lesson/fkbhh/introduction)):
 
 ![MCP Diagram 1](images/mcp1.png)
