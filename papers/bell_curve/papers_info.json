@@ -1,0 +1,49 @@
+{
+  "quant-ph/0601082v1": {
+    "title": "Noiseless subsystems and Bell inequalities in curved spacetime",
+    "authors": [
+      "Jonathan L. Ball"
+    ],
+    "summary": "We examine the use of noiseless subsystems for quantum information processing\nbetween two parties who do not share a common reference frame. In particular we\nfocus on Bell inequalities in curved spaces and outline a theoretical procedure\nto test a Bell inequality, demonstrating the wide applicability of noiseless\nsubsystems.",
+    "pdf_url": "http://arxiv.org/pdf/quant-ph/0601082v1",
+    "published": "2006-01-12"
+  },
+  "2207.13160v1": {
+    "title": "Real algebraic geometry of real algebraic Jordan curves in the plane and the Bergman kernel",
+    "authors": [
+      "Steven R. Bell"
+    ],
+    "summary": "We characterize the space of restrictions of real rational functions to\ncertain algebraic Jordan curves in the plane via the Dirichlet-to-Neumann map\nassociated to the domain in the complex plane bounded by the curve and its\nBergman kernel. The characterization leads to a partial fractions-like\ndecomposition for such rational functions and new ways to describe such Jordan\ncurves. The multiply connected case is also explored.",
+    "pdf_url": "http://arxiv.org/pdf/2207.13160v1",
+    "published": "2022-07-26"
+  },
+  "2403.01352v1": {
+    "title": "Improving Uncertainty Sampling with Bell Curve Weight Function",
+    "authors": [
+      "Zan-Kai Chong",
+      "Hiroyuki Ohsaki",
+      "Bok-Min Goi"
+    ],
+    "summary": "Typically, a supervised learning model is trained using passive learning by\nrandomly selecting unlabelled instances to annotate. This approach is effective\nfor learning a model, but can be costly in cases where acquiring labelled\ninstances is expensive. For example, it can be time-consuming to manually\nidentify spam mails (labelled instances) from thousands of emails (unlabelled\ninstances) flooding an inbox during initial data collection. Generally, we\nanswer the above scenario with uncertainty sampling, an active learning method\nthat improves the efficiency of supervised learning by using fewer labelled\ninstances than passive learning. Given an unlabelled data pool, uncertainty\nsampling queries the labels of instances where the predicted probabilities, p,\nfall into the uncertainty region, i.e., $p \\approx 0.5$. The newly acquired\nlabels are then added to the existing labelled data pool to learn a new model.\nNonetheless, the performance of uncertainty sampling is susceptible to the area\nof unpredictable responses (AUR) and the nature of the dataset. It is difficult\nto determine whether to use passive learning or uncertainty sampling without\nprior knowledge of a new dataset. To address this issue, we propose bell curve\nsampling, which employs a bell curve weight function to acquire new labels.\nWith the bell curve centred at p=0.5, bell curve sampling selects instances\nwhose predicted values are in the uncertainty area most of the time without\nneglecting the rest. Simulation results show that, most of the time bell curve\nsampling outperforms uncertainty sampling and passive learning in datasets of\ndifferent natures and with AUR.",
+    "pdf_url": "http://arxiv.org/pdf/2403.01352v1",
+    "published": "2024-03-03"
+  },
+  "1604.04314v2": {
+    "title": "Simplifying triangulations",
+    "authors": [
+      "Mark C. Bell"
+    ],
+    "summary": "We give a new algorithm to simplify a given triangulation with respect to a\ngiven curve. The simplification uses flips together with powers of Dehn twists\nin order to complete in polynomial time in the bit-size of the curve.",
+    "pdf_url": "http://arxiv.org/pdf/1604.04314v2",
+    "published": "2016-04-14"
+  },
+  "1910.08155v1": {
+    "title": "Experimental statistics for Mirzakhani's Theorem",
+    "authors": [
+      "Mark C Bell"
+    ],
+    "summary": "In her seminal 2008 paper, Maryam Mirzakhani showed that the ratio that two\ntopological types of curves occur in is a rational number.\n  In this paper we describe the process by which we obtained experimental\nevidence that separating and non-separating curves on the surface of genus two\noccur in the ratio 1 : 48.",
+    "pdf_url": "http://arxiv.org/pdf/1910.08155v1",
+    "published": "2019-10-17"
+  }
+}
