@@ -19,9 +19,9 @@ Creating a basic MCP client server local architecture project
 3. Install dependencies:
 
    ```bash
-   uv pip install -r requirements.txt
-   # or
    uv add -r requirements.txt
+   # or
+   uv pip install -r requirements.txt
    ```
 
 ## MCP Architecture

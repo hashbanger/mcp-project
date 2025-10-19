@@ -10,11 +10,12 @@ nest_asyncio.apply()
 load_dotenv()
 
 class ChatbotMCP:
-    def __init__(self, model="claude-3-5-haiku-20241022", max_tokens=1024):
+    def __init__(self, server_filepath, model="claude-3-5-haiku-20241022", max_tokens=1024):
         self.session = None
+        self.server_filepath = server_filepath
         self.anthropic = Anthropic()
         self.available_tools = []
-        self.model = "claude-3-5-haiku-20241022"
+        self.model = model
         self.max_tokens = max_tokens
         self.context = []
 
@@ -49,6 +50,7 @@ class ChatbotMCP:
                     print(f"\n[LOG]: Calling tool {tool_name} with args {tool_args}\n")
 
                     result = await self.session.call_tool(tool_name, arguments=tool_args)
+                    print(f"[LOG]: Tool {tool_name} returned result: `{result.content}`\n")
                     messages.append(
                         {
                             "role": "user", 
@@ -86,7 +88,7 @@ class ChatbotMCP:
     async def connect_to_server_and_run(self):
         server_params = StdioServerParameters(
             command="uv",
-            args=["run", "research_server.py"],
+            args=["run", self.server_filepath],
             env=None
         )
 
@@ -110,7 +112,7 @@ class ChatbotMCP:
                 await self.chat_loop()
 
 async def main():
-    chatbot = ChatbotMCP()
+    chatbot = ChatbotMCP(server_filepath="dummy_server.py")
     await chatbot.connect_to_server_and_run()
 
 if __name__ == "__main__":
